@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.aphart.wgumobileapp.AddNoteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/noteTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="@color/wguBlue"
+        android:textColorHint="@color/wguBronzeGold"
+        android:hint="Note Title"
+        android:layout_margin="20dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage|textMultiLine"
+        android:ems="10"
+        android:id="@+id/noteEditText"
+        android:layout_below="@+id/noteTitle"
+        android:layout_centerHorizontal="true"
+        android:hint="Add your note information here"
+        android:textAlignment="viewStart"
+        android:maxHeight="400dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/wguBlue"
+        android:textColorHint="@color/wguBronzeGold" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/noteEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:id="@+id/noteImageView"
+        android:layout_below="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:maxHeight="400dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/noteCancelBtn"
+        android:textColorHighlight="@color/wguBlue"
+        android:textColor="@color/wguBlue"
+        android:layout_above="@+id/deleteNoteButton"
+        android:layout_alignStart="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo"
+        android:id="@+id/noteAddPictureBtn"
+        android:textColor="@color/wguBlue"
+        android:layout_marginTop="107dp"
+        android:layout_below="@+id/noteImageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/noteSubmitBtn"
+        android:textColor="@color/wguBlue"
+        android:layout_alignTop="@+id/noteAddPictureBtn"
+        android:layout_alignEnd="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deleteNoteButton"
+        android:layout_below="@+id/noteAddPictureBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:textColor="@color/wguBlue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Associated Course"
+        android:id="@+id/associatedCourseTextView"
+        android:layout_below="@+id/noteImageView"
+        android:layout_alignStart="@+id/noteCancelBtn"
+        android:textColor="@color/wguBlue" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/associatedCourseSpinner"
+        android:layout_below="@+id/noteImageView"
+        android:layout_alignEnd="@+id/space" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/shareNote"
+        android:layout_alignTop="@+id/deleteNoteButton"
+        android:layout_alignStart="@+id/noteSubmitBtn"
+        android:textColor="@color/wguBlue" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

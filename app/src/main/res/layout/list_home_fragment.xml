@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listHomeFragmentLayout"
+    android:textAlignment="center"
+    android:padding="40dp"
+    android:textStyle="bold"
+    android:fontFamily="serif"
+    android:textSize="@dimen/list_text_size"
+    android:background="@color/white"
+    android:textColor="@color/wguBlue"
+
+    >
+<!-- you can use a Web Service call to hit external databases over the internet-->
+
+</TextView>

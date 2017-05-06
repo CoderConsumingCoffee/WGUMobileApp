@@ -1,0 +1,423 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.aphart.wgumobileapp.AddCourseFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    //Email Label
+
+    //Second optional email Label
+
+    //Phone number label
+
+    //Second optional phone number
+
+
+    //Save the choice button
+
+
+    //Cancel button
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/turboScroll">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:paddingBottom="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/courseName"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="30dp"
+    android:editable="true"
+    android:textColorHint="@color/wguBronzeGold"
+    android:layout_alignParentEnd="true"
+    android:textAlignment="center"
+    android:hint="Enter A Course Name"
+    android:textColor="@color/wguBlue"
+    android:inputType="textPersonName"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Start Date"
+    android:id="@+id/startDateLabel"
+    android:layout_below="@+id/courseName"
+    android:layout_alignParentStart="true"
+    android:layout_margin="20dp"
+    android:textColor="@color/wguBlue" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="End Date"
+    android:id="@+id/endDateLabel"
+    android:layout_below="@+id/startDateLabel"
+    android:layout_alignStart="@+id/startDateLabel"
+    android:textColor="@color/wguBlue" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="date"
+    android:ems="10"
+    android:id="@+id/courseEndDateSelector"
+    android:layout_alignBottom="@+id/endDateLabel"
+    android:layout_alignParentEnd="true"
+    android:hint="MM/DD/YYYY"
+    android:textAlignment="center"
+    android:focusable="false"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="date"
+    android:ems="10"
+    android:id="@+id/courseStartDateSelector"
+    android:layout_alignBottom="@+id/startDateLabel"
+    android:layout_alignStart="@+id/courseEndDateSelector"
+    android:hint="MM/DD/YYYY"
+    android:focusable="false"
+    android:textAlignment="center"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/courseProgress"
+    android:layout_below="@+id/courseEndDateSelector"
+    android:layout_alignStart="@+id/courseEndDateSelector"
+    android:layout_marginTop="15dp"
+    android:spinnerMode="dialog"
+    android:entries="@array/course_status_array"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentStart="false"
+    android:textAlignment="center"
+    android:dropDownSelector="@color/wguBlue"
+    android:paddingLeft="30dp"
+     />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Course Status"
+    android:id="@+id/courseSatusLabel"
+    android:layout_below="@+id/endDateLabel"
+    android:layout_alignStart="@+id/endDateLabel"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/wguBlue" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Course Mentor"
+    android:id="@+id/courseMentorNameLabel"
+    android:layout_below="@+id/courseSatusLabel"
+    android:layout_alignStart="@+id/courseSatusLabel"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/wguBlue" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/courseMentorName"
+    android:layout_alignBottom="@+id/courseMentorNameLabel"
+    android:layout_alignParentEnd="true"
+    android:hint="Enter Name"
+    android:textAlignment="center"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="CM Phone"
+    android:id="@+id/courseMentorPrimaryPhoneLabel"
+    android:layout_below="@+id/courseMentorNameLabel"
+    android:layout_alignStart="@+id/courseMentorNameLabel"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/wguBlue" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="CM Sec Phone"
+    android:id="@+id/courseMentorSecondPhoneLabel"
+    android:layout_below="@+id/courseMentorPrimaryPhoneLabel"
+    android:layout_alignStart="@+id/courseMentorPrimaryPhoneLabel"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/wguBlue" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="CM Email"
+    android:id="@+id/courseMentorEmailLabel"
+    android:layout_below="@+id/courseMentorSecondPhoneLabel"
+    android:layout_alignStart="@+id/courseMentorSecondPhoneLabel"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/wguBlue" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="CM Sec Email"
+    android:id="@+id/courseMentorecondEmailLabel"
+    android:layout_below="@+id/courseMentorEmailLabel"
+    android:layout_alignStart="@+id/courseMentorEmailLabel"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/wguBlue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Term Association"
+        android:id="@+id/termAssociationLabel"
+        android:layout_below="@+id/courseMentorecondEmailLabel"
+        android:layout_alignStart="@+id/courseMentorecondEmailLabel"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/wguBlue" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/courseMentorPrimaryPhone"
+    android:textAlignment="center"
+    android:hint="Primary Phone"
+    android:layout_alignBottom="@+id/courseMentorPrimaryPhoneLabel"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="phone"
+    android:ems="10"
+    android:id="@+id/courseMentorSecondPhone"
+    android:textAlignment="center"
+    android:hint="Secondary Phone"
+    android:layout_alignBottom="@+id/courseMentorSecondPhoneLabel"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/courseMentorEmail"
+    android:textAlignment="center"
+    android:hint="Primary Email"
+    android:layout_above="@+id/courseMentorecondEmailLabel"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/courseMentorecondEmail"
+    android:textAlignment="center"
+    android:hint="Secondary Email"
+    android:layout_alignBottom="@+id/courseMentorecondEmailLabel"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/wguBlue"
+    android:textColorHint="@color/wguBronzeGold" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termAssociation"
+        android:layout_below="@+id/courseMentorecondEmail"
+        android:layout_alignStart="@+id/courseMentorecondEmail"
+        android:layout_marginTop="15dp"
+        android:spinnerMode="dialog"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:textAlignment="center"
+        android:dropDownSelector="@color/wguBlue"
+        android:paddingLeft="30dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteSpinner"
+        android:layout_below="@+id/termAssociation"
+        android:layout_alignStart="@+id/termAssociation"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Available Notes"
+        android:id="@+id/textView2"
+        android:textColor="@color/wguBlue"
+        android:layout_below="@+id/termAssociation"
+        android:layout_alignStart="@+id/termAssociationLabel"
+        android:layout_marginTop="30dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Assesments"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/wguBlue" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/termAssociation" />
+    </RelativeLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="57dp"
+            android:layout_below="@+id/relativeLayout"
+            >    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/courseEditCancelButton"
+            android:textColor="@color/wguBlue"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:id="@+id/courseDeleteButton"
+                android:textColor="@color/wguBlue"
+                android:layout_above="@+id/courseEditSubmitButton"
+                android:layout_toEndOf="@+id/courseAddNote"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:id="@+id/courseEditSubmitButton"
+                android:textColor="@color/wguBlue"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_row="7"
+                android:layout_column="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review Note"
+                android:id="@+id/launchSelectedNote"
+                android:layout_alignTop="@+id/courseEditCancelButton"
+                android:layout_toEndOf="@+id/courseEditCancelButton"
+                android:textColor="@color/wguBlue"
+                android:layout_row="7"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+Note"
+                android:id="@+id/courseAddNote"
+                android:textColor="@color/wguBlue"
+
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/courseEditSubmitButton"
+                android:layout_row="9"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+Assmnt"
+                android:id="@+id/addAssesmentToCourse"
+                android:textColor="@color/wguBlue"
+                android:layout_below="@+id/remindStartCourse"
+                android:layout_alignParentStart="true"
+                android:layout_row="9"
+                android:layout_column="1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remind Week Before End"
+                android:id="@+id/remindWeekPriorToCourseEnd"
+                android:layout_below="@+id/turboScroll"
+                android:layout_alignStart="@+id/courseAddNote"
+                android:checked="true"
+                android:textColor="@color/wguBlue"
+                android:layout_row="10"
+                android:layout_column="0" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Remind Week Before Start"
+                android:id="@+id/remindStartCourse"
+                android:layout_alignBottom="@+id/remindWeekPriorToCourseEnd"
+                android:layout_alignParentStart="true"
+                android:checked="true"
+                android:textColor="@color/wguBlue"
+                android:layout_row="10"
+                android:layout_column="1" />
+        </GridLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    </RelativeLayout>
+
+

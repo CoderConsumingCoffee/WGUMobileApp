@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameOfEditTerm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Term"
+        android:id="@+id/addTermButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewForCurseAd"
+        android:layout_above="@+id/addTermButton"
+        android:layout_toEndOf="@+id/viewEditAllTermsFrame"
+        android:layout_below="@+id/my_toolbar">
+
+    </ListView>
+
+
+</RelativeLayout>

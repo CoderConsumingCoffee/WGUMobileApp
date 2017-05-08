@@ -132,17 +132,7 @@ public class AddCourseFragment extends android.app.Fragment {
            new LoadTermsForAssociation().execute();
        }
 
-     /*   dbhelper.addCourse(
-                "Main Course",
-                "06/28/1988",
-                "07/28/1988",
-                "Complete!",
-                "Salley May",
-                "401-284-8821",
-                "555-222-1998",
-                "penisman@yahoo.com",
-                "killTheBunnyMan@gmail.com",
-                termAssociation.getSelectedItem().toString());*/
+
 
 
         //CANCEL SELECTED, SO BACK OUT
@@ -503,18 +493,7 @@ Log.e("TermAssociation", ""+termAssociationName);
         AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(getActivity().ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis() - 86400000 /* 1 week in milliseconds*/, pendingIntent);
     }
-    /*COURSE_NAME,
-    COURSE_START_DATE,
-    COURSE_END_DATE,
-    COURSE_STATUS,
-    COURSE_MENTOR_NAME,
-    COURSE_MENTOR_PHONE_ONE,
-    COURSE_MENTOR_PHONE_TWO,
-    COURSE_MENTOR_EMAIL_ONE,
-    COURSE_MENTOR_EMAIL_TWO,
-    COURSE_TERM_POSITION,
-    COURSE_STATUS_POSITION,
-    COURSE_TERM_ASSOCIATION,*/
+
 
 
     private void internalFieldUpdate  (String name, String startDate1, String endDate1, String status, String mentorName, String mentorPrimaryPhone,
@@ -539,13 +518,7 @@ Log.e("TermAssociation", ""+termAssociationName);
             Log.e("TermAssociation issue", nfe.toString() + " Term Position " + termPos);
         }
         }
-//
-//    private void updateFields(String [] strings){
-//        noteFieldInfo = strings;
-//        extras = true;
-//
-//
-//    }
+
     private void alarmBroadcastTest(){
         Calendar calendarForTime = Calendar.getInstance();
         Date date = calendarForTime.getTime();

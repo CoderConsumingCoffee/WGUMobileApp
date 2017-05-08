@@ -48,10 +48,7 @@ public class WGUAppDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
-        /*if (wguAppDatabaseHelper == null){
 
-            db = this.getWritableDatabase();
-        }*/
 
 
         onCreate(sqLiteDatabase);
@@ -335,7 +332,6 @@ public class WGUAppDatabaseHelper extends SQLiteOpenHelper {
         db.close();
         this.close();
 
-        //wguAppDatabaseHelper = null;
         try {
             super.finalize();
         } catch (Throwable throwable) {

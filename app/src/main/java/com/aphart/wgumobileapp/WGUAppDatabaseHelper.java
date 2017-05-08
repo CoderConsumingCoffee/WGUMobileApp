@@ -16,7 +16,7 @@ import static com.aphart.wgumobileapp.WGUAppDBContract.WGUAssesmentEntry.*;
 
 public class WGUAppDatabaseHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 12;
-    private static Context singletonContext;
+
     //The DB object will be used and open for the life of the
     private SQLiteDatabase db;
     //Declaration of strings for creating/updating/etc of the DB tables
@@ -24,10 +24,10 @@ public class WGUAppDatabaseHelper extends SQLiteOpenHelper {
 
 
 
-//The singleton DB OpenHelper for the app
+
     public WGUAppDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        singletonContext = context;
+
         db = this.getWritableDatabase();
     }
 

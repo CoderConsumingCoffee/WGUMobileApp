@@ -13,13 +13,10 @@ import static com.aphart.wgumobileapp.WGUAppDBContract.WGUAppTableConstructors.*
 import static com.aphart.wgumobileapp.WGUAppDBContract.NoteTableEntry.*;
 import static com.aphart.wgumobileapp.WGUAppDBContract.WGUAssesmentEntry.*;
 
-/**
- * Created by aphart on 7/18/2016.
- */
+
 public class WGUAppDatabaseHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 12;
     private static Context singletonContext;
-    //private static WGUAppDatabaseHelper wguAppDatabaseHelper = null;
     //The DB object will be used and open for the life of the
     private SQLiteDatabase db;
     //Declaration of strings for creating/updating/etc of the DB tables
@@ -33,25 +30,7 @@ public class WGUAppDatabaseHelper extends SQLiteOpenHelper {
         singletonContext = context;
         db = this.getWritableDatabase();
     }
-    //Return an instance of the singlton that is thread safe. If there is one already constructed, create a new one with proper context recursively.
-    /*public static synchronized WGUAppDatabaseHelper getInstance(Context context){
-        if (wguAppDatabaseHelper == null){
-            singletonContext = context;
-            wguAppDatabaseHelper = new WGUAppDatabaseHelper(context);
-            db = wguAppDatabaseHelper.getWritableDatabase();
-            return wguAppDatabaseHelper;
-        }
-        else{
-            wguAppDatabaseHelper.close();
-            wguAppDatabaseHelper = new WGUAppDatabaseHelper(context);
-            db = wguAppDatabaseHelper.getWritableDatabase();
-            return wguAppDatabaseHelper;
 
-        }
-
-
-    }
-*/
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 

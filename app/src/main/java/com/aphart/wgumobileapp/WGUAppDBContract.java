@@ -8,9 +8,7 @@ import static com.aphart.wgumobileapp.WGUAppDBContract.WGUAppTermTableEntry.*;
 import static com.aphart.wgumobileapp.WGUAppDBContract.NoteTableEntry.*;
 import static com.aphart.wgumobileapp.WGUAppDBContract.WGUAssesmentEntry.*;
 
-/**
- * Created by aphart on 7/18/2016.
- */
+
 public final class WGUAppDBContract {
     public WGUAppDBContract(){}
 
